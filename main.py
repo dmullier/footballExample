@@ -7,7 +7,7 @@ if __name__ == '__main__':
         f = open("matches.txt")
     except FileNotFoundError:
         print("file not found")
-        exit(-1)
+        exit(-1)                    # exit program passing an error code
     print("Reading file.")
     for line in f:      # loop for every line in  the file
         splitList = line.split(" ")  # split into 4 element list
