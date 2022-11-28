@@ -3,7 +3,11 @@
 if __name__ == '__main__':
     matches = []        # blank list to store valid matches
     line = ""
-    f = open("matches.txt")
+    try:
+        f = open("matches.txt")
+    except FileNotFoundError:
+        print("file not found")
+        exit(-1)
     print("Reading file.")
     for line in f:      # loop for every line in  the file
         splitList = line.split(" ")  # split into 4 element list
