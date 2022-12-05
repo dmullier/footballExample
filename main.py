@@ -37,7 +37,7 @@ if __name__ == '__main__':
         if homeScore > highestScore:
             highestScoreTeam = homeTeam
             highestScore = homeScore
-        elif awayScore > highestScore:
+        if awayScore > highestScore:
             highestScoreTeam = awayTeam
             highestScore = awayScore
     print("Highest score was ", highestScore, " by ", highestScoreTeam)
