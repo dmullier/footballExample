@@ -1,5 +1,5 @@
 # Football Example
-
+# uses concepts needed for tasks 2 and 3
 if __name__ == '__main__':
     matches = []        # blank list to store valid matches
     line = ""
